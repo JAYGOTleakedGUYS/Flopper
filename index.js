@@ -6,7 +6,7 @@ var client = mc.createClient({
     host: process.argv[2],
     port: parseInt(process.argv[3]),
     auth: 'offline',
-    username: 'JahumBug'
+    username: 'Flopper'
 });
 
 forgeHandshake(client, {forgeMods: [
