@@ -5,11 +5,13 @@ var port = 10000;
 app.listen(port);
 console.log('Server listing on port: ' + port);*/
 
-const express = require("express");
-const app = express();
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4000;
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-const PORT = process.env.PORT || 10000;
-
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
-});
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
